@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">	 
+
+
+ 
+	 
+ <servlet>
+ <servlet-name>InsertCustomerFeedback</servlet-name>
+ <servlet-class>servlet.InsertCustomerFeedback</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>  
+ <servlet-name>InsertCustomerFeedback</servlet-name>
+ <url-pattern>/insertfeed</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>readfeedback</servlet-name>
+ <servlet-class>servlet.readfeedback</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>  
+ <servlet-name>readfeedback</servlet-name>
+ <url-pattern>/feedread</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>SingleViewButton</servlet-name>
+ <servlet-class>servlet.SingleViewButton</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>  
+ <servlet-name>SingleViewButton</servlet-name>
+ <url-pattern>/feedview</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ <servlet-name>UpdateFeedback</servlet-name>
+ <servlet-class>servlet.UpdateFeedback</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>  
+ <servlet-name>UpdateFeedback</servlet-name>
+ <url-pattern>/feedupdate</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ <servlet-name>DeleteFeedback</servlet-name>
+ <servlet-class>servlet.DeleteFeedback</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>  
+ <servlet-name>DeleteFeedback</servlet-name>
+ <url-pattern>/formdele</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ </web-app>
